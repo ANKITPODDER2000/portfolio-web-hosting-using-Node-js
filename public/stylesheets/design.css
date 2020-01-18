@@ -146,6 +146,19 @@
 	.container .pages .item.design div.container-design .menu-design-item .design-item .about-img{
 		opacity: 0;
 	}
+
+
+
+
+
+
+	.container .pages .item.design div.container-design .menu-design-item .design-item img{
+		transition: 0.5s;
+	}
+	.container .pages .item.design div.container-design .menu-design-item .design-item:hover img{
+		filter: hue-rotate(360deg) saturate(10) drop-shadow(1px 1px 1px black);
+		transition: 0.6s;
+	}
 }
 /*
 @media screen and (max-width: 1400px){
