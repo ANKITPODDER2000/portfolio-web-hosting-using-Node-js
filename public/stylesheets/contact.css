@@ -129,11 +129,14 @@
     body > div.container > div.pages > div.item.contact > div.map{
         height: 450px;
         margin-bottom: 60px;
+        position: absolute;
+        top:0;
+        left: 0;
     }
     body > div.container > div.pages > div.item.contact > div.contact-form{
         flex-direction: column;
-        position: relative;
-        margin-top: 160px;
+        position: absolute;
+        top: 470px;
     }
     body > div.container > div.pages > div.item.contact > div.contact-form > div.contact-form1,
     body > div.container > div.pages > div.item.contact > div.contact-form > div.contact-form2{
@@ -143,8 +146,8 @@
         margin: 30px 5%;
     }
     body > div.container > div.pages > div.item.contact > div.contact-form > div.contact-form1{
-        position: sticky;
-        top: 0;
+        position: absolute;
+        top: 30px;
         display: block;
         left: 0;
     }
@@ -160,6 +163,11 @@
     }
     body > div.container > div.pages > div.item.contact > div.contact-form > div.contact-form1 > a:nth-child(8){
         margin-left: 25px;
+    }
+    body > div.container > div.pages > div.item.contact > div.contact-form > div.contact-form2{
+        position: absolute;
+        top: 330px;
+        left: 0;
     }
     body > div.container > div.pages > div.item.contact > div.contact-form > div.contact-form2 > form > span{
         left: 0;

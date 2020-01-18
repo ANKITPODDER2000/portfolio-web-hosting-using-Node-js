@@ -1,12 +1,8 @@
 .container .pages .item.design div.container-design{
 	position: relative;
+	display: block;
     width: 100%;
     height: 100%;
-    padding-top: 20px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-    flex-direction: column;
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -16,8 +12,7 @@
 	top:20px;
 	left: 0;
 	width: 100%;
-	height: 100px;
-	display: block;
+	height: 150px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -28,7 +23,7 @@
 	width: 100%;
 	height: 100%;
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 	align-items: center;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -38,11 +33,11 @@
 	margin: 0 10px;
 	padding: 8px 16px;
 	border-radius: 20px;
-	background-color: rgb(209, 201, 201);
 	border: 1px solid rgb(209, 201, 201);
 	transition: .5s;
 	cursor: pointer;
 	font-family: consolas;
+	margin: 10px 0;
 }
 
 .container .pages .item.design div.container-design .menu-design ul li.active,
@@ -55,21 +50,104 @@
     position: relative;
 	width: 100%;
 	margin-top: 20px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
 }
 .container .pages .item.design div.container-design .menu-design-item .design-item{
 	position: relative;
-	width: 40%;
-	margin: 20px 5%;
+	width: 60%;
+	height: 250px;
+	/*margin-top: 25px;
+	margin-bottom: 20px;*/
+	display: block;
+	margin: 25px 20%;
 }
+
 .container .pages .item.design div.container-design .menu-design-item .design-item img{
-	position: relative;
+	position: absolute;
 	width: 100%;
-    height: 100%;
+	height: 100%;
+	object-fit: cover;
     top: 0;
 	left: 0;
 	border: 1px solid black;
 	cursor: pointer;
+	transition: 0.5s 1.4s;
 }
+.container .pages .item.design div.container-design .menu-design-item .design-item:hover img{
+	filter: blur(1.5px) hue-rotate(360deg) saturate(10) drop-shadow(1px 1px 1px black);
+	transition: 0.5s;
+}
+.container .pages .item.design div.container-design .menu-design-item .design-item .about-img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 300px;
+	height: 150px;
+}
+.container .pages .item.design div.container-design .menu-design-item .design-item .about-img  h3{
+	margin-left: 40px;
+	display: inline-block;
+	font-weight: bolder;
+	font-size: 32px;
+	margin-top: 20px;
+	color: transparent;
+	position: relative;
+}
+.container .pages .item.design div.container-design .menu-design-item .design-item .about-img h3::after{
+	content: attr(data-filter);
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	color: deeppink;
+	transform-origin: left;
+	overflow: hidden;
+	transition: 0.9s 0.6s;
+	width: 0;
+}
+.container .pages .item.design div.container-design .menu-design-item .design-item:hover .about-img h3::after{
+	width: 100%;
+	transition: 0.9s 1s;
+}
+.container .pages .item.design div.container-design .menu-design-item .design-item .about-img span{
+	width: 200px;
+    height: 0.5px;
+    background-color: deeppink;
+	display: block;
+	margin-top: 5px;
+	margin-left: 40px;
+	transform: scaleX(0);
+	transition: 0.7s;
+}
+.container .pages .item.design div.container-design .menu-design-item .design-item .about-img span:nth-child(2){
+	transform-origin: left;
+}
+.container .pages .item.design div.container-design .menu-design-item .design-item .about-img span:nth-child(3){
+	transform-origin: right;
+}
+.container .pages .item.design div.container-design .menu-design-item .design-item:hover .about-img span{
+	transform: scaleX(1);
+	transition: 0.7s 2s;
+}
+
+@media screen and (max-width: 700px){
+	.container .pages .item.design div.container-design .menu-design-item .design-item{
+		width: 80%;
+		height: 125px;
+		margin: 17px 10%;
+		border: none;
+	}
+	.container .pages .item.design div.container-design .menu-design-item .design-item img{
+		object-fit: contain;
+		border: none;
+	}
+	.container .pages .item.design div.container-design .menu-design-item .design-item .about-img{
+		opacity: 0;
+	}
+}
+/*
 @media screen and (max-width: 1400px){
 	.container .pages .item.design div.container-design .menu-design-item .design-item{
 		width: 40%;
@@ -109,12 +187,6 @@
 		margin: 20px 0%;
 	}
 }
-/*======================Responsive======================*/
-@media screen and (max-width:1000px){
-	.container .pages .item.design div.container-design .menu-design ul li{
-		word-break: normal;
-	}
-}
 @media screen and (max-width:400px){
 	.container .pages .item.design div.container-design .menu-design{
 		height: 150px;
@@ -135,3 +207,29 @@
 		position: relative;
 	}
 }
+*/
+
+/*======================Responsive======================
+@media screen and (max-width:1000px){
+	.container .pages .item.design div.container-design .menu-design{
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 150px;
+		width: 100%;
+	}
+	.container .pages .item.design div.container-design .menu-design-item{
+		position: absolute;
+		top: 155px;
+		width: 100%;
+		margin: 0;
+		display: block;
+	}
+	.container .pages .item.design div.container-design .menu-design-item .item-design{
+		width: 80%;
+		position: relative;
+		display: block;
+		margin: 0 10%;
+		background-color: rebeccapurple;
+	}
+}*/
