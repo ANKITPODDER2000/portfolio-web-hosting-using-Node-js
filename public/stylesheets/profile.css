@@ -1,0 +1,95 @@
+.container .pages .item.profile{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+}
+.container .pages .item.profile > div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: calc((85% - 3px) / 3);
+    margin: 0 calc(15% / 6);
+}
+
+.container .pages .item.profile div.img img{
+    width: 100%;
+}
+body > div > div.pages > div.item.profile > div.name > h2{
+    margin-bottom: 20px;
+}
+body > div > div.pages > div.item.profile > div.name > h3{
+    margin-bottom: 30px;
+}
+body > div > div.pages > div.item.profile > div.name > p{
+    width: 100%;
+}
+
+.container .pages .item.profile .details p{
+    margin: 5px 0;
+}
+.container .pages .item.profile span{
+    width: 2px;
+    height: 50%;
+    background: rgba(0,0,0,0.4);
+    filter: blur(2px);
+}
+
+
+/*=========================Responsive================*/
+@media screen and (max-width: 1000px){
+    .container .pages .item.profile{
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        flex-direction: column;
+        height: 100%;
+        z-index: 1;
+    }
+    .container .pages .item.profile > div{
+        width: 80%;
+        position: relative;
+        height: 300px;
+    }
+    body > div.container > div.pages > div.item.profile > div.img{
+        margin-top: 150px;
+        position: relative;
+    }
+    body > div.container > div.pages > div.item.profile > div.img img{
+        width: 70%;
+        position: relative;
+        display: inline-block;
+        margin: 0 auto;
+        height: 100%;
+        object-fit: contain;
+    }
+    body > div.container > div.pages > div.item.profile > div.name > h2{
+        font-size: 20px;
+        text-align: center;
+        margin-top: 30px;
+    }
+    body > div.container > div.pages > div.item.profile > div.name > h3{
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    body > div.container > div.pages > div.item.profile > span{
+        display: none;
+    }
+    body > div.container > div.pages > div.item.profile > div.name > p{
+        text-align: center;
+    }
+    body > div.container > div.pages > div.item.profile > div.details{
+        margin-top: 40px;
+        margin-bottom: 70px;
+    }
+}

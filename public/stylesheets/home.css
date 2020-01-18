@@ -1,0 +1,209 @@
+::-webkit-scrollbar {
+  width: 2px;
+}
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+:root{
+    --col : rgb(255, 0, 136);
+}
+*{
+    padding: 0;
+    margin: 0;
+    word-break: break-all;
+}
+html,body{
+    width: 100%;
+    height: 100vh;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ddd6f3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #faaca8, #ddd6f3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #faaca8, #ddd6f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.container{
+    position: relative;
+    width: 800px;
+    height: 450px;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+}
+.container .menu{
+    width: 100px;
+    height: 100%;
+    background-color:var(--col);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container .menu ul{
+    position: relative;
+    width: 100%;
+    list-style-type: none;
+    cursor: pointer;
+}
+.container .menu ul li{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90px;
+    width: 100%;
+    transition: 0.5s;
+}
+.container .menu ul li:hover,
+.container .menu ul li.active{
+    color: var(--col);
+    background: #fff;
+    transition: 0.5s;
+}
+.container .menu ul li i{
+    font-size: 20px;
+    display: block;
+    margin-bottom: 15px;
+}
+.container .menu ul li p{
+    letter-spacing: 2px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.container .pages{
+    position: relative;
+    width: calc(100% - 100px);
+    max-height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.container .pages .item{
+    height: 100%;
+    width: 100%;
+}
+
+/*==================================================*/
+.settings{
+    width: 25px;
+    height: 120px;
+    position: absolute;
+    top: 19.2%;
+    left: calc(((100% - 800px) / 2) - 40px);
+}
+.settings div{
+    position: relative;
+    width: 100%;
+    height: 20px;
+    margin-bottom: 11px;
+    cursor: pointer;
+    border: 2px solid black;
+    transition: 1s;
+}
+.settings div:nth-child(1){
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+}
+.settings div:nth-child(1) i{
+    animation: animate 2s linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.settings div:nth-child(2){
+    background: red;
+    opacity: 0;
+}
+.settings div:nth-child(3){
+    background: rgb(0, 118, 253);
+    opacity: 0;
+}
+.settings div:nth-child(4){
+    background: rgba(255, 187, 0, 0.993);
+    opacity: 0;
+}
+.settings div:nth-child(5){
+    background-color: rgb(255, 0, 136);
+    opacity: 0;
+}
+.settings div:nth-child(2).active,
+.settings div:nth-child(3).active,
+.settings div:nth-child(4).active,
+.settings div:nth-child(5).active{
+    opacity: 1;
+}
+
+/*=========================Responsive================*/
+@media screen and (max-width: 1000px){
+    body > div.container{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow-y: hidden;
+    }
+    body > div.container > div.menu{
+        width: 80px;
+    }
+    body > div.container > div.menu > ul > li{
+        height: 70px;
+    }
+    body > div.container > div.menu > ul > li > p{
+        font-size: 10px;
+    }
+    body > div.container > div.menu > ul > li > i{
+        font-size: 16px;
+    }
+
+    body > div.container > div.pages{
+        width: calc(100% - 80px);
+        height: 100vh;
+    }
+    body > div.container > div.pages .item{
+        width: 100%;
+        height: 100%;
+    }
+    .settings{
+        top: 10px;
+        left:10px;
+        z-index: 9;
+        transform: scale(0.85);
+    }
+}
+
+
+@media screen and (max-width: 400px){
+    body > div.container{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow-y: hidden;
+    }
+    body > div.container > div.menu{
+        width: 60px;
+    }
+    body > div.container > div.menu > ul > li{
+        height: 60px;
+    }
+    body > div.container > div.menu > ul > li > p{
+        font-size: 9px;
+        font-weight: bolder;
+        letter-spacing: 0px;
+    }
+    body > div.container > div.menu > ul > li > i{
+        font-size: 14px;
+    }
+
+    body > div.container > div.pages{
+        width: calc(100% - 60px);
+        height: 100vh;
+    }
+}

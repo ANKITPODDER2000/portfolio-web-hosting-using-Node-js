@@ -1,0 +1,308 @@
+.container .pages .item.resume{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.container .pages .item.resume .box1{
+    position: relative;
+    background: #fff;
+    width: 45%;
+    height: 285%;
+}
+.container .pages .item.resume .box2{
+    position: relative;
+    width: 55%;
+    background: #000;
+    height: 295%;
+}
+.container .pages .item.resume .box1 .name{
+    padding: 35px 15px;
+    height: 220px;
+    background-color: rgb(230, 228, 228);
+}
+.container .pages .item.resume .box1 .name h1{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.container .pages .item.resume .box1 .name h1 span{
+    font-size: 40px;
+    display: block;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    color: var(--col);
+}
+.container .pages .item.resume .box1 .name a{
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--col);
+    margin-top: 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.container .pages .item.resume .box1 .name p{
+    width: 80%;
+}
+.container .pages .item.resume .box1 .details{
+    padding: 30px 0 0 20px;
+}
+.container .pages .item.resume .box1 .details p{
+    margin: 20px 0;
+}
+.container .pages .item.resume .box1 .details p span{
+    color: var(--col);
+    text-transform: uppercase;
+}
+.container .pages .item.resume .box1 .header{
+    max-width:100%;
+    height: 40px;
+    background: var(--col);
+    line-height: 40px;
+    padding-left: 25px;
+}
+.container .pages .item.resume .box1 .header h2{
+    font-size: 26px;
+    color: #fff;
+}
+.container .pages .item.resume .box1 .manager{
+    width: 100%;
+}
+.container .pages .item.resume .box1 .manager h4,
+.container .pages .item.resume .box2 div.education h4{
+    width: 150px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 20px;
+    margin: 20px 0 30px 20px;
+    background: var(--col);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    letter-spacing: 2px;
+}
+.container .pages .item.resume .box1 .manager p,
+.container .pages .item.resume .box2 div.education p{
+    width: 80%;
+    margin: 0 auto 30px;
+    line-height: 20px;
+}
+.container .pages .item.resume .box2 .skills{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-display: column;
+    margin-top: 20px;
+}
+.container .pages .item.resume .box2 .skills div.main{
+    margin: 0 10px;
+}
+.container .pages .item.resume .box2 .skills div.main p{
+    position: relative;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    border: 2px solid var(--col);
+    border-radius: 50%;
+    margin: 7px calc(20% / 8);
+    color: #fff;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    flex-direction: column;
+}
+.container .pages .item.resume .box2 .skills div.main .dot{
+    width: 100%;
+    height: 7px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50%;
+}
+.container .pages .item.resume .box2 .skills div.main .dot span{
+    width: 7px;
+    height: 7px;
+    background: #fff;
+    display: inline-block;
+    border-radius: 50%;
+}
+.container .pages .item.resume .box2 h2#caption,
+.container .pages .item.resume .box2 h2.interest,
+.container .pages .item.resume .box2 h2.education{
+    color: #fff;
+    margin-left: 20px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+.container .pages .item.resume .box2 .skills-it{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 30px 30px 0 30px;
+}
+.container .pages .item.resume .box2 .skills-it > div{
+    width: calc(100% - 60px);
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+.container .pages .item.resume .box2 .skills-it > div div.bar{
+    width: 150px;
+    height: 10px;
+    background-color: #fff;
+    position: relative;
+    border-radius: 15px;
+}
+.container .pages .item.resume .box2 .skills-it > div div.bar span{
+    position: absolute;
+    height: 100%;
+    width: 60%;
+    background: var(--col);
+    border-radius: 15px;
+}
+.container .pages .item.resume .box2 div.interest{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.container .pages .item.resume .box2 div.interest div.int{
+    width: 100px;
+    height: 90px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.container .pages .item.resume .box2 div.interest div.int p{
+    font-size: 12px;
+    margin-top: 20px;
+}
+.container .pages .item.resume .box2 div.education h4,
+.container .pages .item.resume .box2 div.education p{
+    color: #fff;
+}
+
+@media screen and (max-width: 650px){
+    .container .pages .item.resume{
+        position: relative;
+        flex-direction: column;
+        width: 100%;
+    }
+    .container .pages .item.resume div.box1{
+        width: 100%;
+        position: relative;
+    }
+    body > div.container > div.pages > div.item.resume > div.box1 > div.header > h2{
+        font-size: 20px;
+    }
+    body > div.container > div.pages > div.item.resume > div.box1 > div.name > h1{
+        font-size: 24px;
+    }
+    body > div.container > div.pages > div.item.resume > div.box1 > div.name > h1 > span{
+        font-size: 32px;
+    }
+    .container .pages .item.resume .box1 .details{
+        padding: 20px 10px;
+    }
+    body > div.container > div.pages > div.item.resume > div.box1 > div.manager{
+        margin-bottom: 40px;
+    }
+    body > div.container > div.pages > div.item.resume > div.box1 > div.manager > h4{
+        height: 26px;
+        line-height: 26px;
+        font-size: 14px;
+    }
+    body > div.container > div.pages > div.item.resume > div.box1 > div.manager > p{
+        font-size: 14px;
+    }
+
+
+    /*==========It is for box2=================*/
+    body > div.container > div.pages > div.item.resume > div.box2{
+        width: 100%;
+        position: relative;
+    }
+    body > div.container > div.pages > div.item.resume > div.box2 > div.skills{
+        position: relative;
+        width: 100%;
+        justify-content: space-around;
+    }
+    body > div.container > div.pages > div.item.resume > div.box2 > div.skills > div.main{
+        margin: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    body > div.container > div.pages > div.item.resume > div.box2 > div.skills > div{
+        width: 20%;
+        margin: 0;
+    }
+    .container .pages .item.resume .box2 .skills div.main p{
+        width: 30px;
+        height: 30px;
+        margin-right: 0;
+        margin-left: 0;
+        font-size: 12px;
+        text-align: center;
+    }
+    .container .pages .item.resume .box2 .skills div.main .dot span{
+        width: 3px;
+        height: 3px;
+    }
+    .container .pages .item.resume .box2 h2#caption,
+    .container .pages .item.resume .box2 h2.interest,
+    .container .pages .item.resume .box2 h2.education{
+        font-size: 20px;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+
+
+
+    .container .pages .item.resume .box2 .skills-it{
+        padding: 20px 10px;
+    }
+    .container .pages .item.resume .box2 .skills-it > div{
+            width: calc(100% - 20px);
+    }
+    body > div.container > div.pages > div.item.resume > div.box2 > div.skills-it > div p{
+        font-size: 12px;
+    }
+    .container .pages .item.resume .box2 .skills-it > div div.bar{
+        width: 100px;   
+    }
+
+
+
+    .container .pages .item.resume .box2 div.education h4{
+        font-size: 16px;
+        height: 26px;
+        line-height: 26px;
+    }
+}
