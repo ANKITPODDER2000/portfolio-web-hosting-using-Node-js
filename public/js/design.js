@@ -12,3 +12,13 @@ $('.container-design .menu-design ul li').click(function () {
     });
     return false;
 });
+
+
+/*===============================Image Handeling=============================*/
+$('.container .pages .item.design div.container-design .menu-design-item .design-item .about-img').click(function () {
+    $('.img-show img').attr("src", $(this).siblings().attr("src"));
+    $('.img-show').fadeIn(1000);
+    $('.img-show').click(() => {
+        $(".img-show").fadeOut(1000);
+    })
+})
