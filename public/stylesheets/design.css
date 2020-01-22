@@ -13,20 +13,36 @@
 	left: 0;
 	width: 100%;
 	height: 150px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	z-index: 99999;
 }
 .container .pages .item.design div.container-design .menu-design ul{
 	position: relative;
 	width: 100%;
 	height: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	flex-direction: row;
-	flex-wrap: wrap;
+	-webkit-box-pack: space-evenly;
+	    -ms-flex-pack: space-evenly;
+	        justify-content: space-evenly;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 }
 .container .pages .item.design div.container-design .menu-design ul li{
 	list-style-type: none;
@@ -34,6 +50,8 @@
 	padding: 8px 16px;
 	border-radius: 20px;
 	border: 1px solid rgb(209, 201, 201);
+	-webkit-transition: .5s;
+	-o-transition: .5s;
 	transition: .5s;
 	cursor: pointer;
 	font-family: consolas;
@@ -50,9 +68,15 @@
     position: relative;
 	width: 100%;
 	margin-top: 20px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
+	-webkit-box-pack: space-evenly;
+	    -ms-flex-pack: space-evenly;
+	        justify-content: space-evenly;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 .container .pages .item.design div.container-design .menu-design-item .design-item{
 	position: relative;
@@ -68,15 +92,21 @@
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
+	-o-object-fit: cover;
+	   object-fit: cover;
     top: 0;
 	left: 0;
 	border: 1px solid black;
 	cursor: pointer;
+	-webkit-transition: 0.5s 1.4s;
+	-o-transition: 0.5s 1.4s;
 	transition: 0.5s 1.4s;
 }
 .container .pages .item.design div.container-design .menu-design-item .design-item:hover img{
-	filter: blur(1.5px) hue-rotate(360deg) saturate(10) drop-shadow(1px 1px 1px black);
+	-webkit-filter: blur(1.5px) hue-rotate(360deg) saturate(10) drop-shadow(1px 1px 1px black);
+	        filter: blur(1.5px) hue-rotate(360deg) saturate(10) drop-shadow(1px 1px 1px black);
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
 	transition: 0.5s;
 	opacity: 0.6;
 }
@@ -103,13 +133,19 @@
 	left: 0;
 	height: 100%;
 	color: #000;
-	transform-origin: left;
+	-webkit-transform-origin: left;
+	    -ms-transform-origin: left;
+	        transform-origin: left;
 	overflow: hidden;
+	-webkit-transition: 0.9s 0.6s;
+	-o-transition: 0.9s 0.6s;
 	transition: 0.9s 0.6s;
 	width: 0;
 }
 .container .pages .item.design div.container-design .menu-design-item .design-item:hover .about-img h3::after{
 	width: 100%;
+	-webkit-transition: 0.9s 1s;
+	-o-transition: 0.9s 1s;
 	transition: 0.9s 1s;
 }
 .container .pages .item.design div.container-design .menu-design-item .design-item .about-img span{
@@ -119,17 +155,29 @@
 	display: block;
 	margin-top: 5px;
 	margin-left: 40px;
-	transform: scaleX(0);
+	-webkit-transform: scaleX(0);
+	    -ms-transform: scaleX(0);
+	        transform: scaleX(0);
+	-webkit-transition: 0.7s;
+	-o-transition: 0.7s;
 	transition: 0.7s;
 }
 .container .pages .item.design div.container-design .menu-design-item .design-item .about-img span:nth-child(2){
-	transform-origin: left;
+	-webkit-transform-origin: left;
+	    -ms-transform-origin: left;
+	        transform-origin: left;
 }
 .container .pages .item.design div.container-design .menu-design-item .design-item .about-img span:nth-child(3){
-	transform-origin: right;
+	-webkit-transform-origin: right;
+	    -ms-transform-origin: right;
+	        transform-origin: right;
 }
 .container .pages .item.design div.container-design .menu-design-item .design-item:hover .about-img span{
-	transform: scaleX(1);
+	-webkit-transform: scaleX(1);
+	    -ms-transform: scaleX(1);
+	        transform: scaleX(1);
+	-webkit-transition: 0.7s 2s;
+	-o-transition: 0.7s 2s;
 	transition: 0.7s 2s;
 }
 
@@ -141,7 +189,8 @@
 		border: none;
 	}
 	.container .pages .item.design div.container-design .menu-design-item .design-item img{
-		object-fit: contain;
+		-o-object-fit: contain;
+		   object-fit: contain;
 		border: none;
 	}
 	.container .pages .item.design div.container-design .menu-design-item .design-item .about-img{
@@ -154,10 +203,15 @@
 
 
 	.container .pages .item.design div.container-design .menu-design-item .design-item img{
+		-webkit-transition: 0.5s;
+		-o-transition: 0.5s;
 		transition: 0.5s;
 	}
 	.container .pages .item.design div.container-design .menu-design-item .design-item:hover img{
-		filter: hue-rotate(360deg) saturate(10) drop-shadow(1px 1px 1px black);
+		-webkit-filter: hue-rotate(360deg) saturate(10) drop-shadow(1px 1px 1px black);
+		        filter: hue-rotate(360deg) saturate(10) drop-shadow(1px 1px 1px black);
+		-webkit-transition: 0.6s;
+		-o-transition: 0.6s;
 		transition: 0.6s;
 	}
 }

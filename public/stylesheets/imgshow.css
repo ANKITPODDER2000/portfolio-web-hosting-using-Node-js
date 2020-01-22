@@ -20,7 +20,10 @@
     top: 0;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
     width: 80%;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
 }
