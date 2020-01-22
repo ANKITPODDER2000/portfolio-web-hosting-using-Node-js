@@ -11,6 +11,10 @@ app.get("/", function (req, res) {
     res.render("index");
 })
 
+app.get("/*", function (req, res) {
+    res.render("error");
+})
+
 app.listen(PORT, function () {
     console.log("Serevr started on PORT : ", PORT);
 })
